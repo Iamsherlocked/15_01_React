@@ -2,11 +2,9 @@ import React from "react";
 import classes from "./userPage.module.css";
 
 class UserPage extends React.Component {
-
     constructor(props) {
         super(props);
     }
-
     render() {
         return (
             <>
@@ -18,5 +16,4 @@ class UserPage extends React.Component {
         );
     }
 }
-
 export default UserPage;

@@ -7,7 +7,7 @@ class AboutUser extends React.Component {
         super(props);
     }
 
-    render  () {
+    render () {
         return (
             <>
                 <ul className={classes.users}>
