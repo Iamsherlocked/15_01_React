@@ -20,7 +20,7 @@ class ProductsPage extends React.Component {
 
 
     addProduct = () => {
-        this.setState({products: [...this.state.products, this.state.input]})
+        this.setState({products: [...this.state.products, this.state.input], input: ''})
     }
 
     deleteProduct = () => {
@@ -34,7 +34,7 @@ class ProductsPage extends React.Component {
 
             <div>
                 <h1>Products</h1>
-                <input type="text" onChange={this.changeInput} />
+                <input type="text" onChange={this.changeInput} value={this.state.input} />
                 <button onClick={this.getProducts}>get products</button>
                 <button onClick={this.addProduct} >Add product</button>
                 <button onClick={this.deleteProduct}>Delete</button>
