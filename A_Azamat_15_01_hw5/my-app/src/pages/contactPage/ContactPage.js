@@ -22,8 +22,10 @@ class ContactPage extends React.Component {
         })
     }
 
+    submit = () => {
+        console.log(this.state)
 
-
+    }
 
     render  () {
         return (
@@ -47,7 +49,15 @@ class ContactPage extends React.Component {
                     name="count"
                     onChange={this.changeInput}
                 />
-                <button onClick={this.submit}>submit</button>
+                <div>
+                    <button onClick={this.submit}>submit</button>
+                </div>
+
+                <ul>
+                    <li>Name: {this.state.form.name}</li>
+                    <li>Price: {this.state.form.price}</li>
+                    <li>Count: {this.state.form.count}</li>
+                </ul>
 
             </div>
 
